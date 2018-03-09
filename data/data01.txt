@@ -1,0 +1,6 @@
+|predictors 1.12 1.18 1.32 1.29 |passengers 1.21
+|predictors 1.18 1.32 1.29 1.21 |passengers 1.35
+|predictors 1.32 1.29 1.21 1.35 |passengers 1.48
+|predictors 1.29 1.21 1.35 1.48 |passengers 1.48
+|predictors 1.21 1.35 1.48 1.48 |passengers 1.36
+|predictors 1.35 1.48 1.48 1.36 |passengers 1.19

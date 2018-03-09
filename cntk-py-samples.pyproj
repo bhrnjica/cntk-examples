@@ -11,7 +11,7 @@
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda_4.1.1_64-bit</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -21,12 +21,17 @@
   <ItemGroup>
     <Compile Include="hr-cntk-model.py" />
     <Compile Include="iris-cntk-model.py" />
+    <Compile Include="LogReg.py" />
+    <Compile Include="MiniBatch.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda_4.1.1_64-bit" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
