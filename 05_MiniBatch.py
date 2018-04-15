@@ -6,10 +6,8 @@ import cntk as C
 # the_file = "C:/sc/vs/CNTK.NET.Library/CNTK.PY.Library/data01.txt"  # CNTK format
 the_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"data/data01.txt")
 
-predictors = np.loadtxt(fname=the_file, dtype=np.float32,
- delimiter=" ", usecols=(1,2,3,4))
-passengers = np.loadtxt(fname=the_file, dtype=np.float32,
- delimiter=" ", ndmin=2, usecols=[6]) # note!
+predictors = np.loadtxt(fname=the_file, dtype=np.float32, delimiter=" ", usecols=(1,2,3,4))
+passengers = np.loadtxt(fname=the_file, dtype=np.float32, delimiter=" ", ndmin=2, usecols=[6]) # note!
 
 input_dim = 4
 hidden_dim = 12
@@ -17,6 +15,7 @@ output_dim = 1
 
 input_Var = C.ops.input(input_dim, np.float32)
 label_Var = C.ops.input(output_dim, np.float32)
+
 # create and train the nnet object
 
 np.set_printoptions(precision=2)

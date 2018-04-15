@@ -5,7 +5,9 @@ import numpy as np
 import cntk
 
 # The data in the file must satisfied the following format:
+#
 # |labels 0 0 1 |features 2.1 7.0 2.2  - the format consist of 4 features and one 3 component hot vector
+#
 #represents the iris flowers 
 def create_reader(path, randomize, input_dim, num_label_classes):
     
@@ -57,7 +59,7 @@ train_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"data/tra
 
 # Create the reader to training data set
 reader_train= create_reader(train_file,True,input_dim, output_dim)
-z= create_model(input, hidden_dim,output_dim);
+z= create_model(input, hidden_dim,output_dim)
 loss = cntk.cross_entropy_with_softmax(z, label)
 label_error = cntk.classification_error(z, label)
 

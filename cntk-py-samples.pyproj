@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{16e9dffc-c477-485d-9a26-f4a3decab01c}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>hr-cntk-model.py</StartupFile>
+    <StartupFile>01_Demo_Hello CNTK.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -19,10 +19,11 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="hr-cntk-model.py" />
-    <Compile Include="iris-cntk-model.py" />
-    <Compile Include="LogReg.py" />
-    <Compile Include="MiniBatch.py" />
+    <Compile Include="03_hr-cntk-model.py" />
+    <Compile Include="04_iris-cntk-model.py" />
+    <Compile Include="01_Demo_Hello CNTK.py" />
+    <Compile Include="02_Logistic_Regression.py" />
+    <Compile Include="05_MiniBatch.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data" />
