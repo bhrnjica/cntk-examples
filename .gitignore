@@ -4,3 +4,13 @@
 
 /.vs/cntk-py-samples/v15
 /data/sourcedata
+/py/__pycache__
+/.vs/cntk-examples/v15
+*.sqlite
+/.vs
+/csharp/cntk-csharp-examples/obj
+/csharp/cntk-csharp-examples/bin
+/csharp/cntk-csharp-examples/.vs/cntk-csharp-examples/v15
+/csharp/packages
+/data/MINST-TrainData.txt
+/packages

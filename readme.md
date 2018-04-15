@@ -1,2 +1,2 @@
-# cntk-py-samples
-Python examples how to use cntk in training and evaluating variuous datasets.
+# cntk-Examples
+Python and C# examples how to use cntk in training and evaluating variuous datasets.
