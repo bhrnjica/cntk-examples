@@ -1,7 +1,7 @@
 # cntk-Examples
 Python and C# examples how to use cntk in training and evaluating variuous datasets.
 
-The "MINST-TrainData.txt" can be downloaded at this location (https://1drv.ms/t/s!AgPZDj-_uxGLhYNGVMAvUc3QXyB1QQ) since it is 200MB file size.
+The "MINST-TrainData.txt" can be downloaded from this location (https://1drv.ms/t/s!AgPZDj-_uxGLhYNGVMAvUc3QXyB1QQ) since it is 200MB file.
 
 # How to run examples
 
