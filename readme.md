@@ -1,14 +1,14 @@
 # cntk-Examples
 Python and C# examples how to use cntk in training and evaluating variuous datasets.
 
-The "MINST-TrainData.txt" can be downloaded at this location (https://1drv.ms/f/s!AgPZDj-_uxGLhO42HLgBL7DJFfZFnQ) since it is 200MB file size.
+The "MINST-TrainData.txt" can be downloaded at this location (https://1drv.ms/t/s!AgPZDj-_uxGLhYNGVMAvUc3QXyB1QQ) since it is 200MB file size.
 
 # How to run examples
 
-- In order to run C# MINST example the folowing NuGet package have to be intalled:
+- In order to run C# MINST example the folowing NuGet packages have to be intalled:
 	- CNTK 2.5  
 	- Emgu 
-- In order to run Python examples the folowing componented must be installed:
+- In order to run Python examples the folowing components must be installed:
 	- Anaconda 4.1.1 and Python 3.5 
-	- CNTK 2.5 
+	- CNTK 2.5 python wheel
 
