@@ -35,6 +35,7 @@ namespace CNTK.CSTrainingExamples
             var featureStreamName = "features";
             var labelsStreamName = "labels";
             var classifierName = "classifierOutput";
+
             Function classifierOutput;
             int[] imageDim = useConvolution ? new int[] { 28, 28, 1 } : new int[] { 784 };
             int imageSize = 28 * 28;
@@ -80,6 +81,7 @@ namespace CNTK.CSTrainingExamples
             }
 
             var labels = CNTKLib.InputVariable(new int[] { numClasses }, DataType.Float, labelsStreamName);
+            //LOss and Eval functions
             var trainingLoss = CNTKLib.CrossEntropyWithSoftmax(new Variable(classifierOutput), labels, "lossFunction");
             var prediction = CNTKLib.ClassificationError(new Variable(classifierOutput), labels, "classificationError");
 
@@ -91,7 +93,7 @@ namespace CNTK.CSTrainingExamples
             var labelStreamInfo = minibatchSource.StreamInfo(labelsStreamName);
 
             // set per sample learning rate
-            CNTK.TrainingParameterScheduleDouble learningRatePerSample = new CNTK.TrainingParameterScheduleDouble(0.003125, 1);
+            var learningRatePerSample = new CNTK.TrainingParameterScheduleDouble(0.003125, 1);
 
             IList<Learner> parameterLearners = new List<Learner>()
                 {
@@ -114,6 +116,7 @@ namespace CNTK.CSTrainingExamples
                 };
 
                 trainer.TrainMinibatch(arguments, device);
+                //
                 TestHelper.PrintTrainingProgress(trainer, i++, outputFrequencyInMinibatches);
 
                 // MinibatchSource is created with MinibatchSource.InfinitelyRepeat.

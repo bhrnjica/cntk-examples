@@ -24,7 +24,7 @@ C.cntk_py.set_fixed_random_seed(1) # fix the random seed so that LR examples are
 # Ensure that we always get the same results
 np.random.seed(0)
 
-#network configuration
+#network configuration ((2)I-(200)H-(1)O FFANN)
 input_dim=2
 output_dim = 1
 neurons_num = 200
@@ -166,6 +166,7 @@ for i in range(0, num_minibatches_to_train):
         
     # Assign the mini-batch data to the input variables and train the model on the mini-batch
     trainer.train_minibatch({feature : X, label : Y})
+
     if i % 50 == 0:
         batchsize, loss, error = print_training_progress(trainer, i, verbose=1)
  

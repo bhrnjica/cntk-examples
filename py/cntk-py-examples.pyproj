@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{16e9dffc-c477-485d-9a26-f4a3decab01c}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>01_Demo_Hello CNTK.py</StartupFile>
+    <StartupFile>06_CNTK106B-Tutorial.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -24,6 +24,7 @@
     <Compile Include="04_iris-cntk-model.py" />
     <Compile Include="01_Demo_Hello CNTK.py" />
     <Compile Include="02_Logistic_Regression.py" />
+    <Compile Include="06_CNTK106B-Tutorial.py" />
     <Compile Include="05_SimpleRegression.py" />
   </ItemGroup>
   <ItemGroup>
