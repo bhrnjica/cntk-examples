@@ -26,6 +26,12 @@
     <Compile Include="02_Logistic_Regression.py" />
     <Compile Include="06_CNTK106B-Tutorial.py" />
     <Compile Include="05_SimpleRegression.py" />
+    <Compile Include="NALU-keras.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NALU-Tf.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda_4.1.1_64-bit" />
